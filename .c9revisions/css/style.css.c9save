@@ -1,0 +1,3 @@
+{"ts":1378413419081,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1378413485339,"patch":[[{"diffs":[[1,"table,th,td\r\n{\r\nborder:1px solid black;\r\n}\r\nth\r\n{\r\n    font:bold;\r\n}"]],"start1":0,"start2":0,"length1":0,"length2":68}]],"length":68,"saved":false}
+{"ts":1378413505485,"patch":[[{"diffs":[[0,";\r\n}"],[-1,"\r\nth\r\n{\r\n    font:bold;\r\n}"]],"start1":38,"start2":38,"length1":30,"length2":4}]],"length":42,"saved":false}
