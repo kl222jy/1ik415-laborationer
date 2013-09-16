@@ -114,11 +114,11 @@ footer
 /* 2.0 Color */
 body
 {
-    background-color: #ffae40;
+    background-color: #ffc473;
 }
 #container
 {
-    background-color: #ffc473;
+    background-color: #ffffff;
 }
 
 header, footer
@@ -144,6 +144,16 @@ a
 nav>ul>li>a
 {
     color: #000000;
+    background-color: #ffae40;
+}
+nav>ul>li>a.current
+{
+    background-color: #ffffff;
+}
+nav>ul>li>a:hover
+{
+    background-color: #a66000;
+    color: #ffffff;
 }
 
 
@@ -152,8 +162,11 @@ nav>ul>li>a
 
 
 /* 4.0 Navigation */
-nav
+
+nav>ul>li>a
 {
+    display: block;
+    padding: 5px;
     text-align: right;
 }
 
