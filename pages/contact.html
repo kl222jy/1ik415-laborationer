@@ -6,52 +6,55 @@
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
-<header>
-    <h1>Kristoffers Kursportal</h1>
-</header>
-<nav>
-<ul>
-    <li><a href="../index.html">Kursblogg</a></li>
-    <li><a href="presentation.html">Presentation</a></li>
-    <li><a href="labs.html">Laborationer</a></li>
-    <li><a href="contact.html">Kontakt</a></li>
-</ul>
-</nav>
-
-<main>
-<section>
-<h1>Kontakt</h1>
-<p>Observera att nedanstående formulär inte fungerar som kontaktformulär.</p>
-<form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
-    <fieldset>
-        <legend>Fråga</legend>
-            <label>Ärendetyp</label>
-            <select name="type">
-                <option value="question">Fråga</option>
-                <option value="other">Övrigt</option>
-            </select>
-            <br />
-            <label>Rubrik:</label>
-            <input type="text" name="subject">
-            <br />
-            <label>Fråga:</label>
-            <textarea rows="3" cols="40" name="question"></textarea>
-    </fieldset>
-    <fieldset>
-        <legend>Information om dig</legend>
-            Kontakta mig via:<br />
-            <label>mail</label>
-            <input type="checkbox" name="contact" value="mail">
-            <br />
-            <label>telefon</label>
-            <input type="checkbox" name="contact" value="phone">
-    </fieldset>
-    <input type="submit" value="Skicka frågan">
-</form>
-</section>
-</main>
-<footer>
-    &copy; 2013 Kristoffer Lind
-</footer>
+<div id="container">
+    <header>
+        <img src="pics/logo.png" alt="Logotyp" />
+        <h1>Kristoffers Kursportal</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Kursblogg</a></li>
+            <li><a href="presentation.html">Presentation</a></li>
+            <li><a href="labs.html">Laborationer</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+            <h1>Kontakt</h1>
+            <p>Observera att nedanstående formulär inte fungerar som kontaktformulär.</p>
+            <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
+                <fieldset>
+                    <legend>Fråga</legend>
+                        <label>Ärendetyp</label>
+                        <select name="type">
+                            <option value="question">Fråga</option>
+                            <option value="other">Övrigt</option>
+                        </select>
+                        <br />
+                        <label>Rubrik:</label>
+                        <input type="text" name="subject">
+                        <br />
+                        <label>Fråga:</label>
+                        <textarea rows="3" cols="40" name="question"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Information om dig</legend>
+                        Kontakta mig via:<br />
+                        <label>mail</label>
+                        <input type="checkbox" name="contact" value="mail">
+                        <br />
+                        <label>telefon</label>
+                        <input type="checkbox" name="contact" value="phone">
+                </fieldset>
+                <input type="submit" value="Skicka frågan">
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2013 Kristoffer Lind
+    </footer>
+</div>
 </body>
 </html>
