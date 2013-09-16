@@ -1,10 +1,12 @@
 /*
     1.0 - Layout
     2.0 - Color
-    3.0 - Navigation
-    4.0 - Content style
-    4.1 - Tables
-    4.2 - Forms
+    3.0 - Header
+    4.0 . Navigation
+    5.0 - Main
+    5.1 - Tables
+    5.2 - Forms
+    6.0 - Footer
 */
 
 
@@ -62,7 +64,7 @@ table {
 /*    /RESET      */
 
 
-
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* 1.0 Layout */
 #container
@@ -76,46 +78,95 @@ header
     width: 100%;
 }
 
+body
+{
+    box-sizing: border-box;
+}
+
+/*
+    Om main och nav tillsammans upptar 100% flyttas main ner, detta händer tydligen för att whitespace räknas med för inline element. Enda lösningen är font-size:0 på container och därefter återställa font-size överallt.
+    Problemet kan också lösas genom att istället göra layouten med floats. Är det fel att lösa problemet med lösningen ovan? och hur går man isf tillväga om man vill ha mer än 2 kolumner?
+    
+    Så som jag vill färgsätta spelar det dock ingen större roll.
+*/
+
 nav
 {
     display: inline-block;
-    width: 19%;
+    width: 18%;
     vertical-align: top;
     min-width: 100px;
-    max-width: 200px;
 }
 
 main
 {
     display: inline-block;
     vertical-align: top;
-    width: 80%;
+    width: 81%;
 }
 
 footer
 {
     display: block;
-    text-align: right;
 }
 
 
 /* 2.0 Color */
+body
+{
+    background-color: #ffae40;
+}
+#container
+{
+    background-color: #ffc473;
+}
+
+header, footer
+{
+    background-color: #ff9400;
+}
+
+nav
+{
+    background-color: #bf8330;
+}
+
+main
+{
+    background-color: inherit;
+}
+
+a
+{
+    color: #a66000;
+}
+
+nav>ul>li>a
+{
+    color: #000000;
+}
+
+
+/* 3.0 Header */
 
 
 
-/* 3.0 Navigation */
+/* 4.0 Navigation */
+nav
+{
+    text-align: right;
+}
 
 
+/* 5.0 Main */
 
-/* 4.0 Content-styling */
-
-/* 4.1 Tables */
+/* 5.1 Tables */
 table,th,td
 {
 border: 1px solid #000000;
 }
 
-/* 4.2 Forms */
+/* 5.2 Forms */
 label
 {
     width: 5em;
@@ -132,6 +183,14 @@ label
 
 
 
+/* 6.0 Footer */
+
+footer
+{
+    text-align: right;
+}
+
+
 
 
 
@@ -144,6 +203,7 @@ label
 
 
 /*
+
 header, nav, main, footer
 {
     border: 1px solid #000000;
