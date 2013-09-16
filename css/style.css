@@ -7,6 +7,7 @@
     5.1 - Tables
     5.2 - Forms
     5.3 - Typography
+    5.4 - Articles
     6.0 - Footer
 */
 
@@ -86,7 +87,7 @@ body
 
 /*
     Om main och nav tillsammans upptar 100% flyttas main ner, detta händer tydligen för att whitespace räknas med för inline element. Enda lösningen är font-size:0 på container och därefter återställa font-size överallt.
-    Problemet kan också lösas genom att istället göra layouten med floats. Är det fel att lösa problemet med lösningen ovan? och hur går man isf tillväga om man vill ha mer än 2 kolumner?
+    Problemet kan också lösas genom att istället göra layouten med floats.
     
     Så som jag vill färgsätta spelar det dock ingen större roll.
 */
@@ -157,6 +158,14 @@ nav>ul>li>a:hover
     color: #ffffff;
 }
 
+article
+
+{
+    background-color: #fff5ef;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 10px 0 10px 0;
+}
 
 /* 3.0 Header */
 header>img
@@ -171,7 +180,9 @@ header>h1
 }
 header
 {
-    padding: 10px;
+    background-image: url(../pics/logo.png);
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 
 
@@ -253,12 +264,30 @@ p, body
     line-height: 24px;
 }
 
+/* 5.4 Articles */
+
+
+/*
+Bråkade med nedanstående rader ett tag, fick först det att fungera med zoom: 0.15, men fick då klagomål på att zoom inte existerade, transform scale fungerade inte överhuvudtaget.
+Hittade nedanstående som lösning på stackoverflow.. dynamiskt innehåll läggs tydligen in som en låda.. varför först lådans storlek måste anges.. och därefter bildens storlek i denna.
+*/
+article>h2:before
+{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    content: "";
+    background: url(../pics/Pencil-icon.png) no-repeat 0 0;
+    background-size: 100%;
+}
 
 /* 6.0 Footer */
 
 footer
 {
     text-align: right;
+    padding: 10px;
 }
 
 
