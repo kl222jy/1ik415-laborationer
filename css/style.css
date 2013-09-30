@@ -90,7 +90,7 @@ nav
     display: inline-block;
     width: 18%;
     vertical-align: top;
-    min-width: 100px;
+    min-width: 120px;
 }
 
 main
@@ -104,7 +104,6 @@ footer
 {
     display: block;
 }
-
 
 /* 2.0 Color --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 body
@@ -123,7 +122,7 @@ header, footer
 
 nav
 {
-    background-color: #bf8330;
+    background-color: #ffae40;
 }
 
 main
@@ -136,16 +135,16 @@ a
     color: #a66000;
 }
 
-nav>ul>li>a
+#mainMenu a
 {
     color: #000000;
     background-color: #ffae40;
 }
-nav>ul>li>a.current
+#mainMenu a.current
 {
     background-color: #ffffff;
 }
-nav>ul>li>a:hover
+#mainMenu a:hover
 {
     background-color: #a66000;
     color: #ffffff;
@@ -164,11 +163,22 @@ th, tfoot
 
 
 /* 3.0 Header --------------------------------------------------------------------------------------------------------------------------------------------------------- */
-header>img
+
+header h1
 {
-    float: left;
+    font-size: 0px;
 }
-header>h1
+header
+{
+    background-image: url(../pics/header.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    height: 100px;
+}
+
+/*
+header h1
 {
     font-size: 60px;
     line-height: 90px;
@@ -180,18 +190,23 @@ header
     background-repeat: no-repeat;
     background-position: left center;
 }
-
+*/
 
 /* 4.0 Navigation --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-nav>ul>li>a
+#mainMenu a
 {
     display: block;
     padding: 5px;
     text-align: right;
     text-decoration: none;
 }
-
+#mainMenu
+{
+    border-bottom-right-radius: 20px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /* 5.0 Main --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -207,13 +222,30 @@ td
 }
 
 /* 5.2 Forms --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+legend
+{
+    font-size: 20px;
+    line-height: 30px;
+}
 label
 {
     width: 5em;
-    margin-right: 1em;
+    margin-right: 5px;
     text-align: right;
-    display: block;
-    float: left;
+    display: inline-block;
+    vertical-align: top;
+}
+button
+{
+    border:solid 1px #000000; 
+    color:#000000;
+    background-color: #ffaf40;
+    border-radius:5px;
+    margin-left: 90px;
+}
+input, select, textarea
+{
+    border: solid 1px #000000;
 }
 
 /* 5.3 Typography --------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -223,7 +255,7 @@ body
     font-family: georgia, times, helvetica;
 }
 
-nav>ul>li>a, h1, h2, h3, h4, h5, h6
+#mainMenu a, h1, h2, h3, h4, h5, h6
 {
     font-family: verdana, arial;
 }
@@ -277,7 +309,7 @@ p
 Bråkade med nedanstående rader ett tag, fick först det att fungera med zoom: 0.15, men fick då klagomål på att zoom inte existerade, transform scale fungerade inte överhuvudtaget.
 Hittade nedanstående som lösning på stackoverflow.. dynamiskt innehåll läggs tydligen in som en låda.. varför först lådans storlek måste anges.. och därefter bildens storlek i denna.
 */
-article>h2:before
+article h2:first-child:before
 {
     display: inline-block;
     width: 20px;
@@ -288,28 +320,37 @@ article>h2:before
     background-size: 100%;
 }
 
-/* overflow: hidden för att undvika att floats sträcker sig utanför tänkt article */
+/* overflow: hidden för att undvika att floats sträcker sig utanför tänkt article
+   samt att höjden för article ska uppta hela höjden av en float.
+*/
 article
 {
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
     overflow: hidden;
+    clear: both;
+    word-wrap: break-word;
 }
 
 .left
 {
     float: left;
     border: 2px solid #000000;
-    margin: 15px;
 }
 
 .right
 {
     float: right;
     border: 2px solid #000000;
-    margin: 15px;
 }
+
+img, video
+{
+    max-width: 100%;
+    margin:15px;
+}
+
 /* 5.5 Sections --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 section#results
@@ -343,8 +384,3 @@ footer
     text-align: right;
     padding: 10px;
 }
-
-
-
-
-

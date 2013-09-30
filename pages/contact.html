@@ -10,7 +10,7 @@
     <header>
         <h1>Kristoffers Kursportal</h1>
     </header>
-    <nav>
+    <nav id="mainMenu" role="navigation">
         <ul>
             <li><a href="../index.html">Kursblogg</a></li>
             <li><a href="presentation.html">Presentation</a></li>
@@ -25,28 +25,28 @@
             <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
                 <fieldset>
                     <legend>Fråga</legend>
-                        <label>Ärendetyp</label>
-                        <select name="type">
+                        <label for="formquestiontype">Ärendetyp</label>
+                        <select name="type" id="formquestiontype">
                             <option value="question">Fråga</option>
                             <option value="other">Övrigt</option>
                         </select>
                         <br />
-                        <label>Rubrik:</label>
-                        <input type="text" name="subject">
+                        <label for="formsubject">Rubrik:</label>
+                        <input type="text" name="subject" id="formsubject">
                         <br />
-                        <label>Fråga:</label>
-                        <textarea rows="3" cols="40" name="question"></textarea>
+                        <label for="formquestion">Fråga:</label>
+                        <textarea rows="3" cols="30" name="question" id="formquestion"></textarea>
                 </fieldset>
                 <fieldset>
                     <legend>Information om dig</legend>
                         Kontakta mig via:<br />
-                        <label>mail</label>
-                        <input type="checkbox" name="contact" value="mail">
+                        <label for="formmail">E-post</label>
+                        <input type="checkbox" name="contact" id="formmail" value="mail">
                         <br />
-                        <label>telefon</label>
-                        <input type="checkbox" name="contact" value="phone">
+                        <label for="formphone">Telefon</label>
+                        <input type="checkbox" name="contact" id="formphone" value="phone">
                 </fieldset>
-                <input type="submit" value="Skicka frågan">
+                <button type="submit">Skicka fråga</button>
             </form>
         </section>
     </main>
