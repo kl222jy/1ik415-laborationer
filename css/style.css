@@ -170,7 +170,7 @@ header h1
 }
 header
 {
-    background-image: url(../pics/header.png);
+    background-image: url('../pics/header.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
@@ -207,6 +207,7 @@ header
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 
 /* 5.0 Main --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -316,7 +317,7 @@ article h2:first-child:before
     height: 20px;
     margin-right: 5px;
     content: "";
-    background: url(../pics/Pencil-icon.png) no-repeat 0 0;
+    background: url('../pics/Pencil-icon.png') no-repeat 0 0;
     background-size: 100%;
 }
 
@@ -384,3 +385,70 @@ footer
     text-align: right;
     padding: 10px;
 }
+
+
+@media screen and (max-width:480px)
+{
+    #mainMenu
+    {
+        font-size: 12px;
+        background:none;
+        width: 100%;
+    }
+    #mainMenu li
+    {
+        display:inline-block;
+    }
+    #mainMenu a 
+    {
+        background-image: url('../pics/sprite.png');
+        background-repeat:no-repeat;
+        background-color: #ffffff;
+        display: inline-block;
+        height: 24px;
+        padding-left: 27px;
+        transform: rotate(90deg);
+    }
+    #mainMenu a:hover
+    {
+        background-color: #ffffff;
+        color: #000000;
+    }
+    #mainMenu li:first-child a
+    {
+        background-position: 0px 0px;
+    }
+    #mainMenu li:first-child a:hover
+    {
+        background-position: 0px -48px;
+    }
+    #mainMenu li:nth-child(3) a
+    {
+        background-position: 0px -96px;
+    }
+    #mainMenu li:nth-child(3) a:hover
+    {
+        background-position: 0px -144px;
+    }
+    #mainMenu li:nth-child(2) a
+    {
+        background-position: 0px -192px;
+    }
+    #mainMenu li:nth-child(2) a:hover
+    {
+        background-position: 0px -240px;
+    }
+    #mainMenu li:nth-child(4) a
+    {
+        background-position: 0px -288px;
+    }
+    #mainMenu li:nth-child(4) a:hover
+    {
+        background-position: 0px -336px;
+    }
+    
+    
+    
+}
+
+
