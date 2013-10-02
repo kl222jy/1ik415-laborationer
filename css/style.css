@@ -404,7 +404,6 @@ footer
         display: inline-block;
         height: 24px;
         padding-left: 27px;
-        transform: rotate(90deg);
     }
     #mainMenu a:hover
     {
