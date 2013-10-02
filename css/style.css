@@ -502,7 +502,11 @@ footer
         margin-bottom: 5px;
     }
     
-    input, select, textarea
+}
+
+@media screen and (max-device-width: 480px)
+{
+        input, select, textarea
     {
         display: block;
         float: none;
@@ -532,6 +536,4 @@ footer
         height: 40px;
         width: 40px;
     }
-
 }
-
