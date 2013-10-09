@@ -11,10 +11,11 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="pics/icons/apple-touch-icon-114x114-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="pics/icons/apple-touch-icon-72x72-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" href="pics/icons/apple-touch-icon-57x57-precomposed.png" />
+    <script src="js/modernizr-latest.js"></script>
 </head>
 <body>
 <div id="container">
-    <header>
+    <header id="site-header">
         <h1>Kristoffers Kursportal</h1>
     </header>
     <nav id="mainMenu" role="navigation">
@@ -26,17 +27,33 @@
         </ul>
     </nav>
     <main>
-        <article id="2013-10-01">
-            <h2>Uppgift 3.3 Copycat</h2>
-            <p>Uppgift 3.3 är nu färdig och återfinns <a href="https://c9.io/kl222jy/uppgift-3-3/workspace/index.html">här</a>. Det är inte pixelperfekt, men det är helt klart nära nog. Såhär i efterhand tror jag tom det varit bättre om jag låtit bli att ens börja med det.
-            Detta eftersom det nu innebär att koden innefattar mängder marginaler för att flytta delar några pixlar fram och tillbaka, vilket gör det en aning rörigt.</p>
-            <p>Precis innan jag började med denna laboration gjorde jag också några korrigeringar efter synpunkter vid föregående redovisningstillfälle. Jag har också experimenterat lite med att få en flytande layout att fungera. Ser bra ut från ~600px och uppåt, sen någorlunda ner till 4-500px. Nästa laboration var ju dock att göra om för 480px, så det kan kanske bli bra totalt sett då.</p>
-            <p>Kristoffer Lind, 2013-10-01</p>
+        <article class="entry" id="2013-10-01">
+            <header class="entry-header">
+                <h2>Uppgift 3.3 Copycat</h2>
+            </header>
+                <p>Uppgift 3.3 är nu färdig och återfinns <a href="https://c9.io/kl222jy/uppgift-3-3/workspace/index.html">här</a>. Det är inte pixelperfekt, men det är helt klart nära nog. Såhär i efterhand tror jag tom det varit bättre om jag låtit bli att ens börja med det.
+                Detta eftersom det nu innebär att koden innefattar mängder marginaler för att flytta delar några pixlar fram och tillbaka, vilket gör det en aning rörigt.</p>
+                <p>Precis innan jag började med denna laboration gjorde jag också några korrigeringar efter synpunkter vid föregående redovisningstillfälle. Jag har också experimenterat lite med att få en flytande layout att fungera. Ser bra ut från ~600px och uppåt, sen någorlunda ner till 4-500px. Nästa laboration var ju dock att göra om för 480px, så det kan kanske bli bra totalt sett då.</p>
+            <footer class="entry-footer">
+                <p>Kristoffer Lind, 2013-10-01</p>
+            </footer>
+            <section class="comments">
+                <article class="comment">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare sit amet metus non luctus. Nullam bibendum fermentum lacus vitae convallis. Donec eu augue eget magna semper condimentum sit amet at magna. Pellentesque tristique hendrerit enim, nec pharetra erat ultricies sed. Etiam faucibus, lectus vitae vestibulum luctus, purus mauris hendrerit velit, id faucibus ligula velit sit amet justo. Proin ac facilisis arcu, vel feugiat velit. Fusce consequat turpis quis vestibulum interdum. Aenean adipiscing velit a pretium sodales. Ut in porta enim, eu mollis odio. Fusce non velit in diam tincidunt varius.</p>
+                    <footer class="article-footer">Lorem Ipsum</footer>
+                    <article class="comment">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare sit amet metus non luctus. Nullam bibendum fermentum lacus vitae convallis. Donec eu augue eget magna semper condimentum sit amet at magna. Pellentesque tristique hendrerit enim, nec pharetra erat ultricies sed. Etiam faucibus, lectus vitae vestibulum luctus, purus mauris hendrerit velit, id faucibus ligula velit sit amet justo. Proin ac facilisis arcu, vel feugiat velit. Fusce consequat turpis quis vestibulum interdum. Aenean adipiscing velit a pretium sodales. Ut in porta enim, eu mollis odio. Fusce non velit in diam tincidunt varius.</p>
+                        <footer class="article-footer">Lorem Ipsum</footer>
+                    </article>
+                </article>
+            </section>
         </article>
+
     
-    
-        <article id="2013-09-16">
+        <article class="entry" id="2013-09-16">
+        <header class="entry-header">
             <h2>Testpost för inbäddning av bilder</h2>
+            </header>
             <img src="pics/DSC_0110.jpg" class="right" alt="Jag i vinterutstyrsel." />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque arcu metus, accumsan eget elit in, sagittis bibendum metus. Aenean in leo ac dui condimentum mattis. Donec vitae imperdiet lectus, vel malesuada nunc. Suspendisse interdum massa mi, ut facilisis ipsum feugiat id. Vestibulum congue elit eu pretium pellentesque. Vestibulum tincidunt tincidunt justo, at laoreet lacus semper nec. In vitae orci vitae augue aliquet dictum vel quis eros. Vestibulum faucibus porttitor orci, sed feugiat justo elementum sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque vel gravida nunc. Vivamus eleifend augue eget consequat luctus. Aenean vitae velit id urna tincidunt porta. Quisque aliquet sapien at mi varius, at vulputate odio blandit. 
             </p><p>
@@ -48,32 +65,73 @@
             </p><p>
             Pellentesque tincidunt, nulla eu ultrices adipiscing, arcu lacus aliquet risus, a adipiscing nulla eros at purus. Praesent lorem ligula, gravida placerat lorem sit amet, pellentesque lobortis justo. Vestibulum lobortis, neque ac gravida imperdiet, leo leo fringilla diam, vitae suscipit sapien mi at est. Integer velit mauris, sagittis ut consequat sed, consequat viverra enim. Praesent aliquet justo nec eros scelerisque sagittis. Cras et vestibulum nibh. Proin sit amet suscipit dolor. Donec convallis auctor nisi, id vehicula ante tincidunt vel. Vestibulum vestibulum sed justo ac laoreet. Nunc tristique odio libero, et faucibus lectus eleifend sed. Nulla pulvinar eleifend nisl mollis sollicitudin. Aliquam erat volutpat. Cras sit amet ligula nisl. Nam quis bibendum enim, ac porta neque. Nullam facilisis lorem risus, ac iaculis orci elementum non. Integer sit amet convallis orci. 
             </p>
+            <footer class="entry-footer">Kristoffer Lind, 2013-09-16</footer>
+            <section class="comments">
+                <article class="comment">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare sit amet metus non luctus. Nullam bibendum fermentum lacus vitae convallis. Donec eu augue eget magna semper condimentum sit amet at magna. Pellentesque tristique hendrerit enim, nec pharetra erat ultricies sed. Etiam faucibus, lectus vitae vestibulum luctus, purus mauris hendrerit velit, id faucibus ligula velit sit amet justo. Proin ac facilisis arcu, vel feugiat velit. Fusce consequat turpis quis vestibulum interdum. Aenean adipiscing velit a pretium sodales. Ut in porta enim, eu mollis odio. Fusce non velit in diam tincidunt varius.</p>
+                    <footer class="article-footer">Lorem Ipsum</footer>
+                    <article class="comment">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare sit amet metus non luctus. Nullam bibendum fermentum lacus vitae convallis. Donec eu augue eget magna semper condimentum sit amet at magna. Pellentesque tristique hendrerit enim, nec pharetra erat ultricies sed. Etiam faucibus, lectus vitae vestibulum luctus, purus mauris hendrerit velit, id faucibus ligula velit sit amet justo. Proin ac facilisis arcu, vel feugiat velit. Fusce consequat turpis quis vestibulum interdum. Aenean adipiscing velit a pretium sodales. Ut in porta enim, eu mollis odio. Fusce non velit in diam tincidunt varius.</p>
+                        <footer class="article-footer">Lorem Ipsum</footer>
+                    </article>
+                </article>
+            </section>
         </article>
-        <article id="2013-09-05:21:07">
+        <article class="entry" id="2013-09-05:21:07">
+        <header class="entry-header">
             <h2>Infoga video</h2>
+        </header>
             <video class="left" controls preload="none" poster="pics/poster_bbb.jpg">
                 <source src="video/mov_bbb.mp4" type="video/mp4">
                 <source src="video/mov_bbb.ogg" type="video/ogg">
             </video>
-            <p>Det här inlägget gjordes för att prova inbäddning av video. Videon hämtades från <a href="http://www.w3schools.com/html/html5_video.asp">http://www.w3schools.com/html/html5_video.asp</a> och tillhör<a href="http://www.bigbuckbunny.org">http://www.bigbuckbunny.org</a>. 
-            <br />
-            Kristoffer Lind, 2013-09-05</p>
+            <p>Det här inlägget gjordes för att prova inbäddning av video. Videon hämtades från <a href="http://www.w3schools.com/html/html5_video.asp">http://www.w3schools.com/html/html5_video.asp</a> och tillhör<a href="http://www.bigbuckbunny.org">http://www.bigbuckbunny.org</a>. </p>
+            <footer class="entry-footer">Kristoffer Lind, 2013-09-05</footer>
+            <section class="comments">
+                <article class="comment">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare sit amet metus non luctus. Nullam bibendum fermentum lacus vitae convallis. Donec eu augue eget magna semper condimentum sit amet at magna. Pellentesque tristique hendrerit enim, nec pharetra erat ultricies sed. Etiam faucibus, lectus vitae vestibulum luctus, purus mauris hendrerit velit, id faucibus ligula velit sit amet justo. Proin ac facilisis arcu, vel feugiat velit. Fusce consequat turpis quis vestibulum interdum. Aenean adipiscing velit a pretium sodales. Ut in porta enim, eu mollis odio. Fusce non velit in diam tincidunt varius.</p>
+                    <footer class="article-footer">Lorem Ipsum</footer>
+                    <article class="comment">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare sit amet metus non luctus. Nullam bibendum fermentum lacus vitae convallis. Donec eu augue eget magna semper condimentum sit amet at magna. Pellentesque tristique hendrerit enim, nec pharetra erat ultricies sed. Etiam faucibus, lectus vitae vestibulum luctus, purus mauris hendrerit velit, id faucibus ligula velit sit amet justo. Proin ac facilisis arcu, vel feugiat velit. Fusce consequat turpis quis vestibulum interdum. Aenean adipiscing velit a pretium sodales. Ut in porta enim, eu mollis odio. Fusce non velit in diam tincidunt varius.</p>
+                        <footer class="article-footer">Lorem Ipsum</footer>
+                    </article>
+                </article>
+            </section>
         </article>
-        <article id="2013-09-05">
+        <article class="entry" id="2013-09-05">
+        <header class="entry-header">
             <h2>Experiment med svg</h2>
             <img src="pics/logo.svg" class="right" alt="logo som svg" />
-            <p>Nu har jag provat googles verktyg för svg.
-            <br />
-            Kristoffer Lind, 2013-09-05</p>
+            <p>Nu har jag provat googles verktyg för svg.</p>
+            <footer class="entry-footer">Kristoffer Lind, 2013-09-05</footer>
+            <section class="comments">
+                <article class="comment">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare sit amet metus non luctus. Nullam bibendum fermentum lacus vitae convallis. Donec eu augue eget magna semper condimentum sit amet at magna. Pellentesque tristique hendrerit enim, nec pharetra erat ultricies sed. Etiam faucibus, lectus vitae vestibulum luctus, purus mauris hendrerit velit, id faucibus ligula velit sit amet justo. Proin ac facilisis arcu, vel feugiat velit. Fusce consequat turpis quis vestibulum interdum. Aenean adipiscing velit a pretium sodales. Ut in porta enim, eu mollis odio. Fusce non velit in diam tincidunt varius.</p>
+                    <footer class="article-footer">Lorem Ipsum</footer>
+                    <article class="comment">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare sit amet metus non luctus. Nullam bibendum fermentum lacus vitae convallis. Donec eu augue eget magna semper condimentum sit amet at magna. Pellentesque tristique hendrerit enim, nec pharetra erat ultricies sed. Etiam faucibus, lectus vitae vestibulum luctus, purus mauris hendrerit velit, id faucibus ligula velit sit amet justo. Proin ac facilisis arcu, vel feugiat velit. Fusce consequat turpis quis vestibulum interdum. Aenean adipiscing velit a pretium sodales. Ut in porta enim, eu mollis odio. Fusce non velit in diam tincidunt varius.</p>
+                        <footer class="article-footer">Lorem Ipsum</footer>
+                    </article>
+                </article>
+            </section>
         </article>
         <article id="2013-09-03">
             <h2>Hallå världen!</h2>
-            <p>På denna blogg kommer jag att skriva om samt publicera mina laborationer.
-            <br />
-            Kristoffer Lind, 2013-09-03</p>
+            <p>På denna blogg kommer jag att skriva om samt publicera mina laborationer.</p>
+            <footer class="entry-footer">Kristoffer Lind, 2013-09-03</footer>
+            <section class="comments">
+                <article class="comment">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare sit amet metus non luctus. Nullam bibendum fermentum lacus vitae convallis. Donec eu augue eget magna semper condimentum sit amet at magna. Pellentesque tristique hendrerit enim, nec pharetra erat ultricies sed. Etiam faucibus, lectus vitae vestibulum luctus, purus mauris hendrerit velit, id faucibus ligula velit sit amet justo. Proin ac facilisis arcu, vel feugiat velit. Fusce consequat turpis quis vestibulum interdum. Aenean adipiscing velit a pretium sodales. Ut in porta enim, eu mollis odio. Fusce non velit in diam tincidunt varius.</p>
+                    <footer class="article-footer">Lorem Ipsum</footer>
+                    <article class="comment">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare sit amet metus non luctus. Nullam bibendum fermentum lacus vitae convallis. Donec eu augue eget magna semper condimentum sit amet at magna. Pellentesque tristique hendrerit enim, nec pharetra erat ultricies sed. Etiam faucibus, lectus vitae vestibulum luctus, purus mauris hendrerit velit, id faucibus ligula velit sit amet justo. Proin ac facilisis arcu, vel feugiat velit. Fusce consequat turpis quis vestibulum interdum. Aenean adipiscing velit a pretium sodales. Ut in porta enim, eu mollis odio. Fusce non velit in diam tincidunt varius.</p>
+                        <footer class="article-footer">Lorem Ipsum</footer>
+                    </article>
+                </article>
+            </section>
         </article>
     </main>
-    <footer>
+    <footer id="site-footer">
         &copy; 2013 Kristoffer Lind
     </footer>
 </div>

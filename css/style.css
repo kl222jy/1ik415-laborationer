@@ -78,7 +78,7 @@ table {
     font-size: 0;
 }
 
-header
+#site-header
 {
     width: 100%;
 }
@@ -100,7 +100,7 @@ main
     width: 82%;
 }
 
-footer
+#site-footer
 {
     display: block;
 }
@@ -115,7 +115,7 @@ body
     background-color: #ffffff;
 }
 
-header, footer
+#site-header, #site-footer
 {
     background-color: #ff9400;
 }
@@ -164,11 +164,11 @@ th, tfoot
 
 /* 3.0 Header --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-header h1
+#site-header h1
 {
     font-size: 0px;
 }
-header
+#site-header
 {
     background-image: url('../pics/header.png');
     background-repeat: no-repeat;
@@ -346,6 +346,21 @@ img, video
     margin:15px;
 }
 
+.comment
+{
+    background-color: #eeeeee;
+}
+
+.comment .comment
+{
+    background-color: #dddddd;
+}
+
+.article-footer
+{
+    float: right;
+}
+
 /* 5.5 Sections --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 section#results
@@ -374,7 +389,7 @@ ol.numbered
 
 /* 6.0 Footer --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-footer
+#site-footer
 {
     text-align: right;
     padding: 10px;
@@ -388,7 +403,7 @@ footer
         background:none;
         width: 100%;
     }
-    header
+    #site-header
     {
         height: 50px;
     }
