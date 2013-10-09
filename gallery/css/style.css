@@ -30,6 +30,7 @@ a:nth-child(2n)
     -ms-transform:rotate(5deg); /* IE 9 */
     -webkit-transform:rotate(5deg); /* Safari and Chrome */
     transform:rotate(5deg);
+    font-size: 16px;
 }
 
 a:nth-child(3n)
@@ -39,6 +40,7 @@ a:nth-child(3n)
     -ms-transform:rotate(-10deg); /* IE 9 */
     -webkit-transform:rotate(-10deg); /* Safari and Chrome */
     transform:rotate(-10deg);
+    font-size: 15px;
 }
 a:nth-child(4n)
 {
@@ -47,6 +49,8 @@ a:nth-child(4n)
     -ms-transform:rotate(15deg); /* IE 9 */
     -webkit-transform:rotate(15deg); /* Safari and Chrome */
     transform:rotate(15deg);
+    font-size: 17px;
+
 }
 
 a:nth-child(5n)
@@ -56,6 +60,7 @@ a:nth-child(5n)
     -ms-transform:rotate(15deg); /* IE 9 */
     -webkit-transform:rotate(15deg); /* Safari and Chrome */
     transform:rotate(15deg);
+    font-size: 18px;
 }
 
 a:hover
